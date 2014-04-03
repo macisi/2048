@@ -4,7 +4,7 @@
   var GridGap = 10;
   var UnitStep = GridSize + GridGap;
   var Max = 3;
-  var Lock = true;
+  var Lock = !true;
   
   var _slice = [].slice;
   var _sort = [].sort;
@@ -140,8 +140,8 @@
                 this.join(group[i + 1], group[i]);
                 group.splice(i + 1, 1);
                 updated = true;
-                i += 2;
-                continue;
+                // i += 2;
+                // continue;
               }
             }
             i += 1;
