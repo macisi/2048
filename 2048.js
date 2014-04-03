@@ -161,7 +161,7 @@
         
       }, this);
       
-      if (this.collection.length === 16) {
+      if (!updated && this.collection.length === 16) {
         Game.end();
         return;
       }
